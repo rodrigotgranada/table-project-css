@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import EmployeeTable from "./features/employees/components/EmployeeTable";
 import Loader from "./components/atoms/Loader";
 import EmptyState from "./components/atoms/EmptyState";
-import { normalizeText } from "./utils/formatters";
 import useDebounce from "./hooks/useDebounce";
 import { useEmployeeContext } from "./context/EmployeeContext";
 import EmployeeHeader from "./features/employees/components/EmployeeHeader";
+import { normalizeText } from "./utils/formatters/text";
 
 const App: React.FC = () => {
   const { employees, loading, error } = useEmployeeContext();

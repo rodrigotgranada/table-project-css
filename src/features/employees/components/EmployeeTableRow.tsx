@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { formatDate, formatPhone } from "../../../utils/formatters";
+
 import ArrowDownIcon from "../../../components/icons/ArrowDownIcon";
 import { motion, AnimatePresence } from "framer-motion";
+import { formatDate } from "../../../utils/formatters/date";
+import { formatPhone } from "../../../utils/formatters/phone";
 
 const EmployeeTableRow: React.FC<EmployeeTableRowProps> = ({ employee }) => {
   const [expanded, setExpanded] = useState(false);

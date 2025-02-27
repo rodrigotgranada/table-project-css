@@ -3,7 +3,6 @@ import React from "react";
 const EmployeeTableHeader: React.FC = () => {
   return (
     <>
-      {/* Cabeçalho Desktop */}
       <thead className="hidden md:table-header-group">
         <tr className="bg-primary text-white text-left uppercase rounded-t-lg shadow-sm h-[2.9375rem]">
           <th className=" px-8 text-h2 font-medium w-[9.625rem] rounded-tl-lg">
@@ -20,7 +19,7 @@ const EmployeeTableHeader: React.FC = () => {
         </tr>
       </thead>
 
-      {/* Cabeçalho Mobile */}
+      
       <thead className="md:hidden">
         <tr className="bg-primary text-white text-left text-h2 uppercase rounded-t-lg shadow-sm h-[2.9375rem]">
           <th className="px-4 text-h2 font-medium w-[5.188rem] rounded-tl-lg">

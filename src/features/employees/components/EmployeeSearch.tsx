@@ -19,7 +19,7 @@ const EmployeeSearch: React.FC<EmployeeSearchProps> = ({ onSearch }) => {
     <div
       className="relative flex items-center 
       h-[48px] border border-gray10 rounded-lg bg-white
-      w-[335px] md:w-auto md:max-w-[287px]"
+      w-full md:w-auto md:max-w-[287px]"
     >
       <Input
         type="text"
