@@ -1,46 +1,134 @@
-# Getting Started with Create React App
+# BeTalent - Employee Table
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto desenvolvido para gerenciar e visualizar uma tabela de funcionários de maneira eficiente e responsiva.
 
-## Available Scripts
+![BeTalent Preview Desktop](src/assets/screenshots/previewDesk.png)
+![BeTalent Preview Mobile](src/assets/screenshots/previewMob.png)
 
-In the project directory, you can run:
+## 📋 **Sobre o projeto**
 
-### `npm start`
+O BeTalent - Employee Table é um sistema que lista funcionários, permite pesquisar dinamicamente e visualizar detalhes de cada um. Ele é construído com **React, TypeScript e Tailwind CSS**, seguindo boas práticas de organização de código e responsividade.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🚀 **Tecnologias utilizadas**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **React** - Biblioteca para construção de interfaces de usuário.
+- **TypeScript** - Superset do JavaScript que adiciona tipagem estática.
+- **Tailwind CSS** - Framework de estilos utilitários para facilitar a estilização.
+- **Framer Motion** - Biblioteca para animações suaves na UI.
+- **JSON Server** - Simulação de uma API REST para os funcionários.
+- **React Router** - Gerenciamento de rotas do projeto.
+- **Context API** - Gerenciamento global de estado.
 
-### `npm test`
+## 📂 **Estrutura de Pastas**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+📦 src
+├── 📂 assets              # Imagens, ícones e outros arquivos estáticos
+│   ├── 📂 icons
+│   ├── 📂 logo
+│   └── 📂 pictures
+│
+├── 📂 components          # Componentes reutilizáveis (Atoms, Layout, Ícones)
+│   ├── 📂 atoms
+│   ├── 📂 icons
+│   ├── 📂 layout
+│   └── 📂 logo
+│
+├── 📂 context             # Gerenciamento global de estados com Context API
+│
+├── 📂 types               # Tipagem reutilizáveis do projeto
+│
+├── 📂 features            # Feature principal: Employees
+│   └── 📂 employees
+│       ├── 📂 components 
+│       └── 📂 services    # Comunicação com API Fake (JSON Server)
+│
+├── 📂 hooks               # Hooks reutilizáveis do projeto
+│
+├── 📂 pages               # Páginas do sistema
+│
+├── 📂 routes              # Configuração das rotas do React Router
+│
+├── 📂 styles              # Arquivos de estilos e configurações do Tailwind
+│
+├── 📂 utils               # Funções utilitárias como formatadores de dados
+│
+├── 📄 App.tsx             # Home do projeto
+│
+└── 📄 index.tsx           # Arquivo principal do React
+```
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ ## 📦 **Instalação e execução**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🔧 **Pré-requisitos**
+Antes de começar, você precisará ter instalado na sua máquina:
+- [Node.js](https://nodejs.org/en/) (versão recomendada: 16+)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 📥 **1. Clonar o Repositório**
+Abra o terminal e execute:
+```bash
+git clone https://github.com/rodrigotgranada/table-project.git
+```
+Depois, acesse a pasta do projeto:
+```bash
+cd table-project
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 📦 **2. Instalar as Dependências**
+Se estiver usando **npm**, execute:
+```bash
+npm install
+```
+Ou, se preferir **yarn**:
+```bash
+yarn install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+### 🔥 **3. Rodar o Projeto**
+Este projeto possui **scripts npm** configurados para facilitar o desenvolvimento:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- 🔹 **Rodar apenas o frontend (React):**
+  ```bash
+  npm start
+  ```
+  Ou com **yarn**:
+  ```bash
+  yarn start
+  ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 🔹 **Rodar apenas o servidor fake (JSON Server):**
+  ```bash
+  npm run server
+  ```
+  Isso iniciará o servidor em **http://localhost:3001**.
+
+- 🔹 **Rodar frontend + servidor fake simultaneamente:**
+  ```bash
+  npm run start:full
+  ```
+  Isso iniciará o servidor **JSON Server** e o React ao mesmo tempo.
+
+---
+
+
+### ✅ **Tudo pronto!**
+Agora, o projeto está rodando localmente. 🎉
+
+
+## 🔍 **Funcionalidades**
+✔️ Listagem de funcionários  
+✔️ Pesquisa dinâmica com debounce  
+✔️ Responsividade para mobile e desktop  
+✔️ Expansão de detalhes no mobile  
+✔️ Animações suaves com Framer Motion  
+✔️ Roteamento de páginas com React Router  
+✔️ Página de erro 404 para rotas inexistentes  
