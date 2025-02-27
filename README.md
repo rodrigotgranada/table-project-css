@@ -2,8 +2,8 @@
 
 Este é um projeto desenvolvido para gerenciar e visualizar uma tabela de funcionários de maneira eficiente e responsiva.
 
-![BeTalent Preview Desktop](./assets/screenshots/previewDesk.png)
-![BeTalent Preview Mobile](./assets/screenshots/previewMob.png)
+![BeTalent Preview Desktop](src/assets/screenshots/previewDesk.png)
+![BeTalent Preview Mobile](src/assets/screenshots/previewMob.png)
 
 ## 📋 **Sobre o projeto**
 
@@ -119,14 +119,6 @@ Este projeto possui **scripts npm** configurados para facilitar o desenvolviment
 
 ---
 
-### 🏗️ **4. Construir a Aplicação para Produção**
-Se deseja criar a versão otimizada para produção:
-```bash
-npm run build
-```
-Os arquivos otimizados estarão na pasta **/build**.
-
----
 
 ### ✅ **Tudo pronto!**
 Agora, o projeto está rodando localmente. 🎉
