@@ -1,8 +1,9 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:3001",
+  baseURL: process.env.REACT_APP_BACKEND_URL || "http://localhost:3001",
 });
+
 
 export const getEmployees = async (): Promise<Employee[]> => {
   const response = await api.get<Employee[]>("/employees");
