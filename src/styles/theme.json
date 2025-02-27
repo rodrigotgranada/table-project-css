@@ -1,0 +1,39 @@
+{
+  "colors": {
+    "primary": "#0500FF",
+    "blue10": "#EDEFFB",
+    "black": "#1C1C1C",
+    "gray20": "#9E9E9E",
+    "gray10": "#DFDFDF",
+    "gray05": "#F5F5F5",
+    "gray00": "#F0F0F0",
+    "white": "#FFFFFF"
+  },
+  "typography": {
+    "fontFamily": ["Roboto", "sans-serif"],
+    "h1": "20px",
+    "h2": "16px",
+    "h3": "16px",
+    "xg": "26px"
+  },
+  "fontWeight": {
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+  },
+  "spacing": {
+    "medium80": "80px",
+    "medium60": "60px",
+    "medium40": "40px",
+    "medium32": "32px",
+    "regular28": "28px",
+    "regular20": "20px",
+    "regular16": "16px",
+    "little08": "8px",
+    "little04": "4px"
+  },
+  "shadows": {
+    "default": "0px 4px 6px rgba(0, 0, 0, 0.1)",
+    "medium": "0px 6px 10px rgba(0, 0, 0, 0.15)"
+  }
+}
