@@ -1,18 +1,17 @@
-import React from 'react';
-import { BrowserRouter as Routes, Route } from 'react-router-dom';
-import App from '../App';
-import EmployeeDetails from '../features/employees/pages/EmployeeDetails';
-import About from '../pages/About';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import App from "../App";
+import Layout from "../components/layout/Layout";
+import NotFound from "../pages/NotFound";
 
 const AppRoutes: React.FC = () => {
   return (
-
+    <Layout>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/employee/:id" element={<EmployeeDetails />} />
-        <Route path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
-
+    </Layout>
   );
 };
 

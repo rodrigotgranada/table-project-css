@@ -1,13 +1,9 @@
-import React, { useState } from 'react';
-import Input from '../../../components/atoms/Input';
-import Button from '../../../components/atoms/Button';
-
-interface EmployeeSearchProps {
-  onSearch: (value: string) => void;
-}
+import React, { useState } from "react";
+import Input from "../../../components/atoms/Input";
+import SearchIcon from "../../../components/icons/SearchIcon";
 
 const EmployeeSearch: React.FC<EmployeeSearchProps> = ({ onSearch }) => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
@@ -15,31 +11,28 @@ const EmployeeSearch: React.FC<EmployeeSearchProps> = ({ onSearch }) => {
     onSearch(value);
   };
 
-  const clearSearch = () => {
-    setSearchTerm('');
-    onSearch('');
+  const handleSearchClick = () => {
+    onSearch(searchTerm);
   };
 
   return (
-    <div className="relative mb-4 flex items-center">
-   
+    <div
+      className="relative flex items-center 
+      h-[48px] border border-gray10 rounded-lg bg-white
+      w-[335px] md:w-auto md:max-w-[287px]"
+    >
       <Input
         type="text"
-        placeholder="Pesquisar por nome, cargo ou telefone..."
+        placeholder="Pesquisar"
         value={searchTerm}
         onChange={handleChange}
-        className="w-full pr-10 shadow-sm"
+        className="w-full h-full pl-4 pr-12 text-black font-roboto text-h3 bg-transparent focus:outline-none"
       />
 
- 
-      {searchTerm && (
-        <Button
-          onClick={clearSearch}
-          className="absolute right-2 px-2 py-1 text-gray-500 bg-transparent hover:text-red-500"
-        >
-          ✖
-        </Button>
-      )}
+      <SearchIcon
+        onClick={handleSearchClick}
+        className="absolute right-4 text-gray20 w-6 h-6 hover:text-primary transition cursor-pointer"
+      />
     </div>
   );
 };

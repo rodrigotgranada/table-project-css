@@ -1,29 +1,19 @@
-import React from 'react';
-import { Employee } from '../types/employee';
-import EmployeeTableRow from './EmployeeTableRow';
+import React from "react";
+import EmployeeTableRow from "./EmployeeTableRow";
+import EmployeeTableHeader from "./EmployeeTableHeader";
+import { AnimatePresence } from "framer-motion";
 
-interface EmployeeTableProps {
-  employees: Employee[];
-}
-
-const EmployeeTable: React.FC<EmployeeTableProps> = ({ employees }) => {
+const EmployeeTable: React.FC<{ employees: Employee[] }> = ({ employees }) => {
   return (
-    <div className="overflow-x-auto">
-      <table className="min-w-full border">
-        <thead className="bg-gray-200">
-          <tr>
-            <th className="py-2 px-4 border">Imagem</th>
-            <th className="py-2 px-4 border">Nome</th>
-            <th className="py-2 px-4 border">Cargo</th>
-            <th className="py-2 px-4 border">Data de Admissão</th>
-            <th className="py-2 px-4 border">Telefone</th>
-            <th className="py-2 px-4 border">Ações</th>
-          </tr>
-        </thead>
+    <div className="w-full md:shadow-lg md:rounded-none shadow-none rounded-b-lg overflow-hidden">
+      <table className="w-full border-collapse bg-white">
+        <EmployeeTableHeader />
         <tbody>
-          {employees.map(emp => (
-            <EmployeeTableRow key={emp.id} employee={emp} />
-          ))}
+          <AnimatePresence>
+            {employees.map((employee) => (
+              <EmployeeTableRow key={employee.id} employee={employee} />
+            ))}
+          </AnimatePresence>
         </tbody>
       </table>
     </div>

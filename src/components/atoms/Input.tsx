@@ -1,11 +1,13 @@
-import React from 'react';
-
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
+import clsx from "clsx";
+import React from "react";
 
 const Input: React.FC<InputProps> = ({ className, ...props }) => {
   return (
     <input
-      className={`p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400 ${className || ''}`}
+      className={clsx(
+        `p-2 border rounded w-full text-sm md:text-base`,
+        className,
+      )}
       {...props}
     />
   );
