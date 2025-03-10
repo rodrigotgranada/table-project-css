@@ -1,0 +1,29 @@
+.employee-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--gray00);
+  height: 140px;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+
+.employee-header-title {
+  font-size: var(--font-h1);
+  font-weight: var(--font-medium);
+  color: var(--black);
+  margin: 24px 0;
+}
+@media (min-width: 768px) {
+  .employee-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 112px;
+  }
+
+  .employee-header-title {
+    margin-bottom: 0;
+  }
+}
+

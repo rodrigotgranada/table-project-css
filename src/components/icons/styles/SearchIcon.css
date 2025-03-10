@@ -1,0 +1,16 @@
+.search-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  color: var(--gray20);
+  transition: color 0.3s ease-in-out;
+}
+
+.search-icon:hover {
+  color: var(--primary);
+}
+
+.search-icon.disabled {
+  color: var(--gray10);
+  cursor: default;
+}

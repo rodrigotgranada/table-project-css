@@ -1,33 +1,25 @@
 import React from "react";
+import "./../styles/EmployeeTableHeader.css";
 
 const EmployeeTableHeader: React.FC = () => {
   return (
     <>
-      <thead className="hidden md:table-header-group">
-        <tr className="bg-primary text-white text-left uppercase rounded-t-lg shadow-sm h-[2.9375rem]">
-          <th className=" px-8 text-h2 font-medium w-[9.625rem] rounded-tl-lg">
-            Foto
-          </th>
-          <th className=" px-0 text-h2 font-medium w-[14.375rem]">Nome</th>
-          <th className=" px-0 text-h2 font-medium w-[11.6875rem]">Cargo</th>
-          <th className=" px-0 text-h2 font-medium w-[13.5rem]">
-            Data de Admissão
-          </th>
-          <th className=" px-0 text-h2 font-medium w-[10.875rem] rounded-tr-lg">
-            Telefone
-          </th>
+      <thead className="employee-table-header">
+        <tr className="employee-table-header-row">
+          <th className="employee-table-header-cell employee-table-header-cell-photo">Foto</th>
+          <th className="employee-table-header-cell employee-table-header-cell-name">Nome</th>
+          <th className="employee-table-header-cell employee-table-header-cell-job">Cargo</th>
+          <th className="employee-table-header-cell employee-table-header-cell-date">Data de Admissão</th>
+          <th className="employee-table-header-cell employee-table-header-cell-phone">Telefone</th>
         </tr>
       </thead>
 
-      
-      <thead className="md:hidden">
-        <tr className="bg-primary text-white text-left text-h2 uppercase rounded-t-lg shadow-sm h-[2.9375rem]">
-          <th className="px-4 text-h2 font-medium w-[5.188rem] rounded-tl-lg">
-            Foto
-          </th>
-          <th className="text-h2 font-medium">Nome</th>
-          <th className="text-h2 font-medium w-12 rounded-tr-lg pl-1">
-            <span className="text-xg">•</span>
+      <thead className="employee-table-header-mobile">
+        <tr className="employee-table-header-row-mobile">
+          <th className="employee-table-header-cell-mobile employee-table-header-cell-photo-mobile">Foto</th>
+          <th className="employee-table-header-cell-mobile employee-table-header-cell-name-mobile">Nome</th>
+          <th className="employee-table-header-cell-mobile employee-table-header-cell-action-mobile">
+            <span>•</span>
           </th>
         </tr>
       </thead>

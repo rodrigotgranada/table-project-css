@@ -1,15 +1,23 @@
-import clsx from "clsx";
 import React from "react";
+import clsx from "clsx";
+import SearchIcon from "../icons/SearchIcon";
+import "./styles/Input.css";
 
-const Input: React.FC<InputProps> = ({ className, ...props }) => {
+const Input: React.FC<InputProps> = ({ className, onChange, ...props }) => {
+  const isDisabled = props.disabled || false;
+
   return (
-    <input
-      className={clsx(
-        `p-2 border rounded w-full text-sm md:text-base`,
-        className,
-      )}
-      {...props}
-    />
+    <div className="input-container">
+      <input
+        className={clsx("input", className)}
+        onChange={onChange}
+        {...props}
+      />
+      <SearchIcon
+        className={clsx("input-icon", { disabled: isDisabled })}
+        onClick={isDisabled ? undefined : () => console.log("Pesquisar...")}
+      />
+    </div>
   );
 };
 

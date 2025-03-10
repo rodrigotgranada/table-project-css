@@ -1,0 +1,58 @@
+:root {
+    --primary: #0500FF;
+    --blue10: #EDEFFB;
+    --black: #1C1C1C;
+    --gray20: #9E9E9E;
+    --gray10: #DFDFDF;
+    --gray05: #F5F5F5;
+    --gray00: #F0F0F0;
+    --white: #FFFFFF;
+  
+    --font-roboto: "Roboto", sans-serif;
+    --font-helvetica: "Helvetica Neue", Arial, sans-serif;
+
+    --font-h1: 20px;
+    --font-h2: 16px;
+    --font-h3: 16px;
+    --font-xg: 26px;
+  
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+
+    --spacing-medium80: 80px;
+    --spacing-medium60: 60px;
+    --spacing-medium40: 40px;
+    --spacing-medium32: 32px;
+    --spacing-regular28: 28px;
+    --spacing-regular20: 20px;
+    --spacing-regular16: 16px;
+    --spacing-little08: 8px;
+    --spacing-little04: 4px;
+  
+  
+    --shadow-default: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0px 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-helvetica);
+    background-color: var(--gray00);
+  }
+  
+  @font-face {
+    font-family: "Helvetica Neue";
+    src: url("./../assets/fonts/HelveticaRegular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Helvetica Neue";
+    src: url("./../assets/fonts/HelveticaNeueMedium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+  }
+  

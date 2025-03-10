@@ -2,11 +2,12 @@ import React from "react";
 import EmployeeTableRow from "./EmployeeTableRow";
 import EmployeeTableHeader from "./EmployeeTableHeader";
 import { AnimatePresence } from "framer-motion";
+import "./../styles/EmployeeTable.css";
 
 const EmployeeTable: React.FC<{ employees: Employee[] }> = ({ employees }) => {
   return (
-    <div className="w-full md:shadow-lg md:rounded-none shadow-none rounded-b-lg overflow-hidden">
-      <table className="w-full border-collapse bg-white">
+    <div className="employee-table-container">
+      <table className="employee-table">
         <EmployeeTableHeader />
         <tbody>
           <AnimatePresence>

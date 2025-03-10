@@ -1,0 +1,15 @@
+.arrow-down-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    stroke: var(--gray20);
+    transition: stroke 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .arrow-down-icon:hover {
+    stroke: var(--primary);
+  }
+  
+  .arrow-down-icon.active {
+    transform: rotate(180deg);
+  }
+  

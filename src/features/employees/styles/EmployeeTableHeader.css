@@ -1,0 +1,99 @@
+.employee-table-header {
+  display: none;
+}
+
+.employee-table-header-row-mobile {
+  font-size: var(--font-h2);
+  font-weight: var(--font-medium);
+  font-family: var(--font-helvetica);
+}
+
+
+.employee-table-header-mobile {
+  display: table-header-group;
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: left;
+  text-transform: uppercase;
+  height: 2.9375rem;
+  box-shadow: var(--shadow-default);
+}
+
+
+.employee-table-header-cell-mobile {
+  font-size: var(--font-h2);
+  font-weight: var(--font-medium);
+}
+
+
+.employee-table-header-cell-photo-mobile {
+  width: 5.188rem;
+  padding-left: 16px; 
+  border-top-left-radius: 8px;
+}
+
+
+.employee-table-header-cell-name-mobile {
+  width: auto;
+  padding-left: 8px; 
+}
+
+
+.employee-table-header-cell-action-mobile {
+  width: 3rem;
+  padding-left: 0.25rem;
+  border-top-right-radius: 8px;
+  font-size: var(--xg);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .employee-table-header-mobile {
+    display: none;
+  }
+
+  .employee-table-header {
+    display: table-header-group;
+  }
+
+  .employee-table-header-row {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: left;
+    text-transform: uppercase;
+    height: 2.9375rem;
+    box-shadow: var(--default);
+  }
+
+
+  .employee-table-header-cell {
+    font-size: var(--font-h2);
+    font-weight: var(--font-medium);
+    font-family: var(--font-helvetica);
+  }
+
+
+  .employee-table-header-cell-photo {
+    width: 122px;
+    border-top-left-radius: 8px;
+    padding-left: 32px;
+  }
+
+  .employee-table-header-cell-name {
+    width: 230px;
+    line-height: var(--spacing-regular20);
+  }
+
+  .employee-table-header-cell-job {
+    width: 187px;
+  }
+
+  .employee-table-header-cell-date {
+    width: 216px;
+  }
+
+  .employee-table-header-cell-phone {
+    width: 10.875rem;
+    border-top-right-radius: 8px;
+  }
+}

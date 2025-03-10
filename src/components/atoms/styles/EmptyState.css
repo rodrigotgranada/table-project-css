@@ -1,0 +1,28 @@
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--spacing-medium40) 0;
+    color: var(--gray20);
+  }
+  
+  .empty-state svg {
+    width: 72px;
+    height: 72px;
+    color: var(--gray20);
+    margin-bottom: var(--spacing-little08);
+  }
+  
+  .empty-state .message {
+    font-size: var(--font-h2);
+    font-weight: var(--font-medium);
+  }
+  
+  .empty-state .sub-message {
+    font-size: var(--font-h3);
+    font-weight: var(--font-regular);
+    margin-top: var(--spacing-little04);
+  }
+  
