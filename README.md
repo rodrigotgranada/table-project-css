@@ -13,50 +13,9 @@ O BeTalent - Employee Table é um sistema que lista funcionários, permite pesqu
 
 - **React** - Biblioteca para construção de interfaces de usuário.
 - **TypeScript** - Superset do JavaScript que adiciona tipagem estática.
-- **Tailwind CSS** - Framework de estilos utilitários para facilitar a estilização.
-- **Framer Motion** - Biblioteca para animações suaves na UI.
 - **JSON Server** - Simulação de uma API REST para os funcionários.
 - **React Router** - Gerenciamento de rotas do projeto.
 - **Context API** - Gerenciamento global de estado.
-
-## 📂 **Estrutura de Pastas**
-
-```bash
-📦 src
-├── 📂 assets              # Imagens, ícones e outros arquivos estáticos
-│   ├── 📂 icons
-│   ├── 📂 logo
-│   └── 📂 pictures
-│
-├── 📂 components          # Componentes reutilizáveis (Atoms, Layout, Ícones)
-│   ├── 📂 atoms
-│   ├── 📂 icons
-│   ├── 📂 layout
-│   └── 📂 logo
-│
-├── 📂 context             # Gerenciamento global de estados com Context API
-│
-├── 📂 types               # Tipagem reutilizáveis do projeto
-│
-├── 📂 features            # Feature principal: Employees
-│   └── 📂 employees
-│       ├── 📂 components 
-│       └── 📂 services    # Comunicação com API Fake (JSON Server)
-│
-├── 📂 hooks               # Hooks reutilizáveis do projeto
-│
-├── 📂 pages               # Páginas do sistema
-│
-├── 📂 routes              # Configuração das rotas do React Router
-│
-├── 📂 styles              # Arquivos de estilos e configurações do Tailwind
-│
-├── 📂 utils               # Funções utilitárias como formatadores de dados
-│
-├── 📄 App.tsx             # Home do projeto
-│
-└── 📄 index.tsx           # Arquivo principal do React
-```
 
 
 
@@ -129,6 +88,5 @@ Agora, o projeto está rodando localmente. 🎉
 ✔️ Pesquisa dinâmica com debounce  
 ✔️ Responsividade para mobile e desktop  
 ✔️ Expansão de detalhes no mobile  
-✔️ Animações suaves com Framer Motion  
 ✔️ Roteamento de páginas com React Router  
 ✔️ Página de erro 404 para rotas inexistentes  
